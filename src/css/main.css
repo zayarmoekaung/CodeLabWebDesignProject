@@ -1,0 +1,216 @@
+@font-face {
+    font-family: ayarJuno;
+    src: url(/src/fonts/AyarJuno-2LO8.ttf);
+}
+header{
+    background-color: rgb(32, 31, 31);
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 5px;
+    
+    
+}
+nav{
+    
+
+}
+header label{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100%;
+    color: #f86829;
+    font-family: ayarJuno;
+    font-size: 1.5em;
+}
+header ls{
+    display: flex; 
+    list-style: none;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+   
+}
+header ls li{
+    margin-left: 8px;
+}
+header ls a {
+   
+    text-decoration: none;
+    color: #f86829;
+    font-size: 0.8em;
+} 
+.navcenter{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    display: block;
+    padding: auto;
+}
+.navright{
+    width: 25%;
+    display: flex;
+    justify-content: right;
+
+}
+.navicon{
+    width: 25%;
+    height: 100%;
+    
+}
+.navlogo{
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+/* 
+Hamburger Menu 
+*/
+
+  
+  .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+      background: black;
+      z-index: -1;
+  }
+  
+  
+  
+  #hamburger-input{
+    display: none;
+  }
+  
+  #hamburger-menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      display: none;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Cabin', Sans-serif;
+      background: linear-gradient(
+      to bottom, 
+      #f86829, #f86829 20%, 
+      black 20%, black 40%, 
+      #f86829 40%, #f86829 60%, 
+      black 60%, black 80%, 
+      #f86829 80%, #f86829 100%
+    );
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibilty: hidden;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: rgb(32, 31, 31);
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
+  
+  #hamburger-menu h3 {
+    color: #f86829;
+    font-size: 2.2rem;
+    font-family: ayarJuno;
+  }
+  
+  #hamburger-menu ul {
+    padding-right: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+  #hamburger-menu a {
+    color: #f86829;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  #hamburger-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+      right: 0;
+  }
+  #hamburger-input:checked ~ .overlay{
+     visibility: visible;
+    opacity: 0.4;
+  }
+  
+  
+  
+/*-----------------------*/
+@media screen and (max-width: 1254px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+  }
+
+  /*Home Section */
+ .hero{
+    position: relative;
+    display: block;
+    margin: 2vw;
+ }
+ .hero .herotext{
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    width: 300px;
+    word-wrap: break-word;
+    
+ }
+ .hero .herotext label{
+    font-family: ayarJuno;
+    font-size: 2.5rem;
+    width: 100%;
+    color: white;
+ }
+ .hero .herotext button{
+    background-color: #f86829;
+    color: white;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+ }
+  .herobg{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    margin: auto;
+
+  }
+  .quote{
+    
+  }
+ 
